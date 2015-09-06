@@ -11,6 +11,7 @@ class CoursesController < ApplicationController
   # GET /courses/1.json
   def show
     @participant = Participant.new(course_id: @course.id)
+    @participants = Participant.where(course_id: @course.id)
   end
 
   # GET /courses/new
