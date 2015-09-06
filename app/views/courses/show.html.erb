@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<p><%= @participant.course_id %></p>
 <p>
   <strong>Tour date:</strong>
   <%= @course.tour_date %>
@@ -31,6 +32,8 @@
 </p>
 
 <p><%= render 'participants/form' %></p>
+
+
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
